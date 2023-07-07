@@ -1,0 +1,33 @@
+.add-comment {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .forminp {
+      display: flex;
+      gap: 20px;
+      input {
+        padding: 20px;
+        width: 80%;
+      }
+      select {
+        width: 16%;
+        padding: 20px;
+        align-self: flex-end;
+      }
+    }
+    button {
+      width: 100%;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      background-color: #1dbf73;
+      color: white;
+    }
+  }
+}

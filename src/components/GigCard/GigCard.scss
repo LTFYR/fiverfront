@@ -1,0 +1,80 @@
+.gigcard {
+  width: 324px;
+  height: 370px;
+  position: relative;
+  border: 1px solid gainsboro;
+  border-radius: 6px;
+  margin-bottom: 26px;
+  @media only screen and (max-width: 600px) and (min-width: 320px) {
+    width: 460px;
+  }
+  @media only screen and (max-width: 992px) and (min-width: 600px) {
+  }
+  img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+  }
+  &__info {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    &__user {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      img {
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+      }
+    }
+    &__rate {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      img {
+        width: 14px;
+        height: 14px;
+      }
+      span {
+        font-weight: bold;
+        font-size: 14px;
+      }
+    }
+  }
+  hr {
+    height: 0;
+    border: 0.5px solid lightgray;
+  }
+  &__detail {
+    padding: 10px 20px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    gap: 140px;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+    &__price {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      span {
+        color: #999;
+        font-size: 12px;
+      }
+      h2 {
+        color: #555;
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+  }
+}

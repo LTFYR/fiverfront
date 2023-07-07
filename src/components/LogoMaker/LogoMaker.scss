@@ -1,0 +1,76 @@
+.logomaker {
+  padding: 100px 0;
+  @media screen and (min-width: 320px) and (max-width: 600px) {
+    // padding: 100px 20px;
+  }
+  &__container {
+    width: 1400px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    background-color: #446ee7;
+    padding: 36px 0 36px 32px;
+    border-radius: 6px;
+    color: #fff;
+    @media screen and (min-width: 320px) and (max-width: 600px) {
+      width: 90%;
+      display: block;
+      align-items: center;
+    }
+    @media screen and (min-width: 610px) and (max-width: 900px) {
+      width: 90%;
+    }
+    &__text {
+      width: 30%;
+      padding-left: 76px;
+      @media screen and (min-width: 320px) and (max-width: 600px) {
+        width: 80%;
+        padding-left: 0;
+      }
+      @media screen and (min-width: 610px) and (max-width: 900px) {
+        width: 100%;
+      }
+      small {
+        display: block;
+        padding-bottom: 16px;
+        font-size: 26px;
+      }
+      div {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 24px;
+      }
+      h2 {
+        color: #fff;
+        font-size: 34px;
+        line-height: 39px;
+        margin-bottom: 8px;
+        padding-bottom: 0;
+      }
+      a {
+        border: 1px solid transparent;
+        border-radius: 4px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 100%;
+        padding: 12px 24px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        color: #446ee7;
+        background-color: white;
+      }
+    }
+    &__image {
+      width: 70%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

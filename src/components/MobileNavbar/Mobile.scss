@@ -1,0 +1,61 @@
+.mobile {
+  display: none;
+  svg {
+    font-size: 30px;
+  }
+  a {
+    font-size: 34px;
+    font-weight: bold;
+    span {
+      color: #1dbf73;
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 900px) {
+    display: flex;
+    justify-content: space-between;
+    background-color: #013914;
+    color: white;
+    padding: 20px;
+    align-items: center;
+    border-bottom: 1px solid gainsboro;
+  }
+}
+
+.offcanvas {
+  .body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 40px;
+  }
+  .btn-mobile {
+    width: 140px !important;
+    border: none !important;
+    padding: 10px !important;
+    cursor: pointer !important;
+    margin-left: 20px;
+    background-color: #1dbf73 !important;
+    color: white !important;
+    border-radius: 8px;
+  }
+  .btn-close:focus {
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, 0.125);
+    background-color: transparent;
+  }
+}
+
+.accordion {
+  .accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, 0.125);
+    background-color: transparent;
+  }
+  .header {
+  }
+  .body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

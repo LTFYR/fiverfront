@@ -1,0 +1,48 @@
+.owngigs {
+  display: flex;
+  justify-content: center;
+  &__container {
+    width: 1400px;
+    padding: 50px 0;
+    &__title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      button {
+        background-color: #1fdb73;
+        cursor: pointer;
+        color: white;
+        font-weight: 500;
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+      }
+    }
+    table {
+      width: 100%;
+      tr {
+        height: 50px;
+
+        th {
+          text-align: start;
+        }
+
+        td {
+          img {
+            width: 50px;
+            height: 25px;
+            object-fit: cover;
+          }
+          svg {
+            width: 20px;
+            cursor: pointer;
+            color: red;
+          }
+        }
+        &:nth-child(even) {
+          background-color: #19784c2b;
+        }
+      }
+    }
+  }
+}

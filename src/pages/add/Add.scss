@@ -1,0 +1,81 @@
+.add {
+  display: flex;
+  justify-content: center;
+  &__container {
+    width: 1400px;
+    padding: 50px 0;
+    h1 {
+      color: gray;
+      font-weight: 300;
+      margin-bottom: 30px;
+    }
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      gap: 100px;
+      &__left,
+      &__right {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+        label {
+          color: gray;
+          font-size: 18px;
+        }
+        input,
+        select,
+        textarea {
+          padding: 20px;
+        }
+        .images {
+          display: flex;
+          padding: 4px;
+          align-items: center;
+          justify-content: space-between;
+          border: 1px solid gray;
+          border-radius: 4px;
+          gap: 20px;
+          .imgInp {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          }
+        }
+        button {
+          padding: 20px;
+          background-color: #1dbf73;
+          color: white;
+          border: none;
+          cursor: pointer;
+          font-size: 18px;
+          font-weight: 500;
+          border-radius: 4px;
+        }
+        .feature {
+          display: flex;
+          justify-content: space-between;
+          input {
+            width: 80%;
+          }
+        }
+        .features {
+          display: flex;
+          gap: 20px;
+          button {
+            height: 32px;
+            font-size: 12px;
+            font-weight: 400;
+            background-color: transparent;
+            color: red;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border: 1px solid red;
+          }
+        }
+      }
+    }
+  }
+}
